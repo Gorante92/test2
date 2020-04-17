@@ -29,7 +29,7 @@ db.connect((err) => {
   console.log(`Mysql Connected`);
 });
 
-//insert new recipe
+//retrieve recipe from db
 app.get("/addrecipe", (req, res) => {
   let sql =
     "SELECT id, name, source, ingredients, preparation, instructions FROM recipes";
